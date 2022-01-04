@@ -1,9 +1,10 @@
 const panels = document.querySelectorAll(".panel");
 
-function removeDisplay() {
-  projectLinks.forEach((link)=> {
-    link.classList.remove('display')
-  })
+
+function removeActiveCLasses() {
+    panels.forEach((panel) => {
+    panel.classList.remove('active')
+    })    
 }
 
 panels.forEach((panel) => {
