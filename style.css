@@ -139,6 +139,7 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+    padding: 2.5rem;
 }
 
 @media (max-width: 840px) {
