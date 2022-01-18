@@ -91,46 +91,97 @@ section h2, footer h2{
 .projects {
     background-image: linear-gradient(rgba(51, 179, 166, .5), rgba(51, 179, 166, 1) );
     padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
 }
+
 .project-container {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: auto 15%;
-    
+    width: 100%;
+    height: 100%;
+}
+.panel-container {
+    width: 40%;
 }
 
 .panel {
     background-size: cover 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
-    border-radius: 60px;
-    flex: 0.5;
-    margin: 10px;
+    height: 60vh;
+    margin: 5px 5px 0 5px;
     position: relative;
-    transition: flex 0.7s ease-in;
     display: flex;
     justify-content: center;
     align-items:flex-end;
+    min-width: 0;
 } 
 
-.panel a{
+.about-project a {
     color: white;
     background-color: rgba(51, 179, 166, 1);
     border: 1px solid rgba(51, 179, 166, 1);
     padding: .4rem 1rem;
     border-radius: 15px;
     font-size: 1.5rem;
-    margin: 0 .5rem .5rem 0;
-    opacity: 0;
-    transition: opacity 0.7s ease-in;
+    margin: .2rem;
 }
 
-.panel.active {
-    flex: 4.2; 
+.about-project {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 5px;
+    min-height: 15rem;
 }
 
-.panel.active a {
-    opacity: 1;
+.about-project p {
+    margin: .5rem;
+}
+
+/* contact */
+
+.contact-form {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.email {
+    
+    text-align: center;
+    max-width: 30rem;
+    font-size: 1rem;
+}
+.text-area {
+    font-family: 'M PLUS 1', sans-serif;
+    resize: none;
+    margin: 1rem;
+    max-width: 30rem;
+    font-size: 1rem;
+}
+
+.form-btn {
+    color: white;
+    background-color: rgba(51, 179, 166, 1);
+    border: 1px solid rgba(51, 179, 166, 1);
+    padding: .4rem 1rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+.form-btn:hover {
+    cursor: pointer;
 }
 
 /* Footer */
@@ -164,10 +215,15 @@ footer {
 
     .project-container {
         flex-direction: column;
-        height: 130vh;
+        align-items: center;
     }
 
-    .panel {
+    .panel-container {
+        width: 90%;
+    }
+
+
+    /* .panel {
         background-size: cover 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -188,6 +244,6 @@ footer {
         margin: 0 .2rem 1.5rem 0;
         opacity: 1;
         transition: opacity 0.7s ease-in;
-    }
+    } */
     
 }
