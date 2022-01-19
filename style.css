@@ -103,9 +103,11 @@ section h2, footer h2{
     flex-wrap: wrap;
     margin: auto 15%;
     width: 100%;
-    height: 100%;
 }
+
 .panel-container {
+    display: flex;
+    flex-direction: column;
     width: 40%;
 }
 
@@ -114,7 +116,7 @@ section h2, footer h2{
     background-position: center;
     background-repeat: no-repeat;
     height: 60vh;
-    margin: 5px 5px 0 5px;
+    margin: 10px 5px 0 5px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -139,7 +141,7 @@ section h2, footer h2{
     text-align: center;
     padding: 1rem;
     margin: 0 5px;
-    min-height: 15rem;
+    flex: 1;
 }
 
 .about-project p {
